@@ -1,0 +1,18 @@
+// Strudel REPL
+// Title: CHASE
+// By: BathyalEcho
+
+$: n("<0 4 3 5 8>*16")
+	.scale("G:Minor")
+	.sound("sawtooth" ss
+	.velocity(0.2)
+
+$: s("<bd - bd bd ->*16")
+	.bank("RolandR8")
+
+$: n("<0 3 2 5 2>*8")
+	.scale("G:Minor")
+	.trans(-10)
+	.velocity(0.2)
+	.sound("sawtooth")
+
