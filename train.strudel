@@ -1,0 +1,33 @@
+setcpm(67)
+
+$: chord("<Cm9 Dm7b5 G7alt Cm9 Fm9 Bb7 Eb^9 G7#9>")
+  .sound("sine")
+  .voicing()
+  .lpf(800)
+  .gain(0.25)
+
+$: note("<c2 d2 g1 c2 f2 bb1 eb2 g1>")
+  .sound("sawtooth")
+  .lpf(400)
+  .decay(.2)
+  .sustain(.6)
+  .gain(0.4)
+
+$: note("<[c4,eb4,bb4] [d4,f4,c5] [g3,b3,f4] [c4,eb4,bb4] [f4,ab4,eb5] [bb3,d4,ab4] [eb4,g4,d5] [g3,b3,f4]>")
+  .sound("piano")
+  .struct("[~ x ~ x@2 ~ x ~]")
+  .gain(0.35)
+
+$: note("<eb5@3 ~ f5@3 ~ g5@2 ~ bb5@2 ~ ab5@3 ~ f5@3 ~ g5@4 ~@4>")
+  .sound("gm_alto_sax")
+  .gain(0.25)
+
+$: sound("bd ~ ~ bd:1 ~ bd ~ ~")
+  .gain(0.5)
+
+$: sound("~ hh ~ <hh oh> ~ hh ~ hh")
+  .gain(0.3)
+
+$: sound("~ ~ sd ~ ~ ~ sd:1 ~")
+  .gain(0.45)
+

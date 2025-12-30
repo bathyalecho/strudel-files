@@ -1,0 +1,21 @@
+setcpm(21)
+
+$: chord("<Am7 D CM7 Em7 CM7 Am7 F#m7b5 D7>")
+	.sound("piano")
+	.voicing()
+	.trans(-4)
+	.struct("x - x@2")
+	.crush(8)
+	.detune(sine.range(-10,10).slow(2))
+
+$: chord("<Eb@8>")
+	.voicing()
+	.sound("sine")
+	.lpf(500)
+	.gain(0.2)
+
+
+
+$: s("<bd ~ sd ~ bd ~ <sd bd> ~>*8")
+
+$: s("<~ hh ~ hh@2 ~ ~ ~ ~>*8").crush(4)
